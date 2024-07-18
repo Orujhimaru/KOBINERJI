@@ -1,4 +1,4 @@
-.box {
+/* .box {
   width: 100%;
   height: 100vh;
   background-color: bisque;
@@ -8,4 +8,82 @@
   width: 100%;
   height: 100vh;
   background-color: rgb(146, 82, 4);
+} */
+
+.example::-webkit-scrollbar {
+  display: none;
+}
+
+.example {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.body {
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  position: relative;
+}
+
+.container {
+  font-family: "Roboto", sans-serif;
+  max-width: 1300px;
+  margin: 0 auto;
+  height: 85vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  position: fixed;
+  bottom: 0px;
+  left: 7.5%;
+  right: 7.5%;
+}
+
+.project {
+  height: 100%;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  position: relative;
+}
+
+.absolute-text-1 {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translate(0%, -50%);
+  opacity: 0;
+  font-size: 85px;
+}
+
+.absolute-text-2 {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translate(0%, -50%);
+  opacity: 0;
+  font-size: 85px;
+}
+
+.absolute-text-3 {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translate(0%, -50%);
+  opacity: 0;
+  font-size: 85px;
+}
+
+.absolute-text-4 {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translate(0%, -50%);
+  opacity: 0;
+  font-size: 85px;
+}
+
+.main-photo {
+  object-fit: unset;
+  height: 100%;
+  width: 100%;
 }
