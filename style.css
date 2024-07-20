@@ -31,7 +31,6 @@ body {
   bottom: 0px;
   left: 7.5%;
   right: 7.5%;
-  color: rgb(4, 2, 23);
 }
 
 .project {
@@ -41,6 +40,10 @@ body {
   position: relative;
 }
 
+.absolute-text-4,
+.absolute-text-5,
+.absolute-text-3,
+.absolute-text-2,
 .absolute-text-1 {
   position: absolute;
   top: 30%;
@@ -50,33 +53,16 @@ body {
   font-size: 120px;
 }
 
-.absolute-text-2 {
-  position: absolute;
-  top: 30%;
-  left: 5%;
-  transform: translate(0%, -50%);
-  opacity: 0;
-  font-size: 120px;
-  color: aliceblue;
+.text-color-1 {
+  color: rgb(50, 50, 50);
 }
 
-.absolute-text-3 {
-  position: absolute;
-  top: 30%;
-  left: 5%;
-  transform: translate(0%, -50%);
-  opacity: 0;
-  font-size: 120px;
-  color: antiquewhite;
+.text-color-2 {
+  color: rgb(255, 241, 228);
 }
 
-.absolute-text-4 {
-  position: absolute;
-  top: 30%;
-  left: 5%;
-  transform: translate(0%, -50%);
-  opacity: 0;
-  font-size: 120px;
+.text-color-3 {
+  color: rgb(255, 255, 255);
 }
 
 .main-photo {
@@ -108,9 +94,5 @@ body {
 .slider-item {
   width: 20px;
   height: 2px;
-  background-color: rgb(216, 216, 216);
-}
-
-.n4 {
   background-color: rgb(216, 216, 216);
 }

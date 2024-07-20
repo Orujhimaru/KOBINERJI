@@ -110,7 +110,7 @@ gsap.to(".absolute-text-4", {
 gsap.to(".absolute-text-5", {
   scrollTrigger: {
     scroller: ".container",
-    trigger: ".absolute-text-4",
+    trigger: ".absolute-text-5",
     toggleActions: "play none restart none",
   },
   duration: 2,
@@ -157,7 +157,7 @@ gsap.to(".n4", {
   backgroundColor: "#5c5c5c",
 });
 
-gsap.to(".n4", {
+gsap.to(".n5", {
   scrollTrigger: {
     scroller: ".container",
     trigger: ".absolute-text-5",
