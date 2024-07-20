@@ -107,6 +107,16 @@ gsap.to(".absolute-text-4", {
   opacity: 1,
 });
 
+gsap.to(".absolute-text-5", {
+  scrollTrigger: {
+    scroller: ".container",
+    trigger: ".absolute-text-4",
+    toggleActions: "play none restart none",
+  },
+  duration: 2,
+  opacity: 1,
+});
+
 gsap.to(".n1", {
   scrollTrigger: {
     scroller: ".container",
@@ -141,6 +151,16 @@ gsap.to(".n4", {
   scrollTrigger: {
     scroller: ".container",
     trigger: ".absolute-text-4",
+    toggleActions: "play reset play reset",
+  },
+  duration: 2,
+  backgroundColor: "#5c5c5c",
+});
+
+gsap.to(".n4", {
+  scrollTrigger: {
+    scroller: ".container",
+    trigger: ".absolute-text-5",
     toggleActions: "play reset play reset",
   },
   duration: 2,
