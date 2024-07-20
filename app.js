@@ -31,18 +31,27 @@
 // gsap.to(
 
 // )
+var photoLength = document.getElementById("main-photo").offsetHeight;
+
+function scrollPos() {
+  var div = document.getElementById("container").scrollTop;
+  // console.log(div);
+  // console.log(photoLength);
+}
+
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.to("container", {
+gsap.from(".container", {
   duration: 2,
-  y: -100,
+  ease: "power3.out",
+  y: 5000,
 });
 
 gsap.to(".absolute-text-1", {
   scrollTrigger: {
     scroller: ".container",
     trigger: ".absolute-text-1",
-    toggleActions: "restart none none none",
+    toggleActions: "play none restart none",
   },
   duration: 2,
   opacity: 1,
@@ -52,7 +61,7 @@ gsap.to(".absolute-text-2", {
   scrollTrigger: {
     scroller: ".container",
     trigger: ".absolute-text-2",
-    toggleActions: "restart none none pause",
+    toggleActions: "play none restart none",
   },
   duration: 2,
   opacity: 1,
@@ -62,7 +71,7 @@ gsap.to(".absolute-text-3", {
   scrollTrigger: {
     scroller: ".container",
     trigger: ".absolute-text-3",
-    toggleActions: "restart none none none",
+    toggleActions: "play none restart none",
   },
   duration: 2,
   opacity: 1,
@@ -72,7 +81,7 @@ gsap.to(".absolute-text-4", {
   scrollTrigger: {
     scroller: ".container",
     trigger: ".absolute-text-4",
-    toggleActions: "restart none none none",
+    toggleActions: "play none restart none",
   },
   duration: 2,
   opacity: 1,
