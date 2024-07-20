@@ -33,11 +33,31 @@
 // )
 var photoLength = document.getElementById("main-photo").offsetHeight;
 
-function scrollPos() {
-  var div = document.getElementById("container").scrollTop;
-  // console.log(div);
-  // console.log(photoLength);
-}
+var slider1 = document.getElementById("n1");
+var slider2 = document.getElementById("n2");
+var slider3 = document.getElementById("n3");
+var slider4 = document.getElementById("n4");
+
+const sliderParts = [slider1, slider2, slider3, slider4];
+
+// async function scrollPos() {
+//   var pos = document.getElementById("container").scrollTop;
+//   console.log(photoLength);
+//   console.log(pos);
+//   await new Promise((r) => setTimeout(r, 1000));
+//   if (pos <= photoLength * 3) {
+//     slider2.classList.add("toggle-color");
+//   } else if (pos <= photoLength * 2) {
+//     slider3.classList.add("toggle-color");
+//     slider4.classList.remove("toggle-color");
+//   } else if (pos <= photoLength) {
+//     slider4.classList.add("toggle-color");
+//     slider3.classList.remove("toggle-color");
+//   } else {
+//     slider1.classList.add("toggle-color");
+//     slider2.classList.remove("toggle-color");
+//   }
+// }
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -85,4 +105,44 @@ gsap.to(".absolute-text-4", {
   },
   duration: 2,
   opacity: 1,
+});
+
+gsap.to(".n1", {
+  scrollTrigger: {
+    scroller: ".container",
+    trigger: ".absolute-text-1",
+    toggleActions: "play reset play reset",
+  },
+  duration: 1,
+  backgroundColor: "#5c5c5c",
+});
+
+gsap.to(".n2", {
+  scrollTrigger: {
+    scroller: ".container",
+    trigger: ".absolute-text-2",
+    toggleActions: "play reset play reset",
+  },
+  duration: 1,
+  backgroundColor: "#5c5c5c",
+});
+
+gsap.to(".n3", {
+  scrollTrigger: {
+    scroller: ".container",
+    trigger: ".absolute-text-3",
+    toggleActions: "play reset play reset",
+  },
+  duration: 1,
+  backgroundColor: "#5c5c5c",
+});
+
+gsap.to(".n4", {
+  scrollTrigger: {
+    scroller: ".container",
+    trigger: ".absolute-text-4",
+    toggleActions: "play reset play reset",
+  },
+  duration: 1,
+  backgroundColor: "#5c5c5c",
 });
