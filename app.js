@@ -113,7 +113,7 @@ gsap.to(".n1", {
     trigger: ".absolute-text-1",
     toggleActions: "play reset play reset",
   },
-  duration: 1,
+  duration: 2,
   backgroundColor: "#5c5c5c",
 });
 
@@ -123,7 +123,7 @@ gsap.to(".n2", {
     trigger: ".absolute-text-2",
     toggleActions: "play reset play reset",
   },
-  duration: 1,
+  duration: 2,
   backgroundColor: "#5c5c5c",
 });
 
@@ -133,7 +133,7 @@ gsap.to(".n3", {
     trigger: ".absolute-text-3",
     toggleActions: "play reset play reset",
   },
-  duration: 1,
+  duration: 2,
   backgroundColor: "#5c5c5c",
 });
 
@@ -143,6 +143,6 @@ gsap.to(".n4", {
     trigger: ".absolute-text-4",
     toggleActions: "play reset play reset",
   },
-  duration: 1,
+  duration: 2,
   backgroundColor: "#5c5c5c",
 });
