@@ -167,7 +167,28 @@ gsap.to(".n5", {
   backgroundColor: "#5c5c5c",
 });
 
+// gsap.to(".", {
+//   onComplete: () => {
+//     window.location.href = "hizmetler1.html";
+//   },
+// });
+
+// gsap.utils.toArray(".project").forEach((el) => {
+//   gsap.to(el, {
+//     width: "100%",
+//     duration: 1,
+//   });
+// });
+// const a = document.getElementById("1stpic");
+// a.addEventListener("click", loadContentsPage);
+
 function loadContentsPage(navigationPage) {
   //navigate to page+navigationPage
+  // gsap.utils.toArray(".project").forEach((el) => {
+  //   gsap.to(el, {
+  //     width: "100%",
+  //     duration: 1,
+  //   });
+  // });
   window.location.href = "hizmetler1.html";
 }
