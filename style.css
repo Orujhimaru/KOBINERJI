@@ -98,7 +98,9 @@ body {
 }
 
 .link {
-  text-transform: uppercase;
+  /* 
+    text-transform: uppercase;*/
+
   text-decoration: none;
   color: #1f1f1f;
   font-size: 32px;
@@ -135,4 +137,68 @@ body {
   display: flex;
   align-items: center;
   height: 15%;
+}
+
+@media (max-width: 1150px) {
+  .progress-slider {
+    right: 20px;
+  }
+
+  /* .second-nav-part {
+    gap: 40px;
+  } */
+}
+
+@media (max-width: 750px) {
+  .link {
+    font-size: 16px;
+  }
+
+  .second-nav-part {
+    gap: 30px;
+  }
+
+  .progress-slider {
+    right: 10px;
+  }
+
+  .project h3 {
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 400px) {
+  .link {
+    font-size: 16px;
+  }
+
+  .second-nav-part {
+    gap: 10px;
+  }
+
+  .progress-slider {
+    right: 10px;
+  }
+}
+
+@media (max-width: 367px) {
+  .link {
+    font-size: 16px;
+  }
+
+  .second-nav-part {
+    gap: 10px;
+  }
+
+  .progress-slider {
+    right: 4px;
+  }
+
+  .slider-item {
+    width: 15px;
+  }
+
+  .project h3 {
+    font-size: 40px;
+  }
 }
