@@ -71,7 +71,7 @@ gsap.to(".absolute-text-1", {
   scrollTrigger: {
     scroller: ".container",
     trigger: ".absolute-text-1",
-    toggleActions: "play none restart none",
+    toggleActions: "play none restart reset",
   },
   duration: 2,
   opacity: 1,
@@ -81,7 +81,7 @@ gsap.to(".absolute-text-2", {
   scrollTrigger: {
     scroller: ".container",
     trigger: ".absolute-text-2",
-    toggleActions: "play none restart none",
+    toggleActions: "play none restart reset",
   },
   duration: 2,
   opacity: 1,
@@ -91,7 +91,7 @@ gsap.to(".absolute-text-3", {
   scrollTrigger: {
     scroller: ".container",
     trigger: ".absolute-text-3",
-    toggleActions: "play none restart none",
+    toggleActions: "play none restart reset",
   },
   duration: 2,
   opacity: 1,
@@ -101,7 +101,7 @@ gsap.to(".absolute-text-4", {
   scrollTrigger: {
     scroller: ".container",
     trigger: ".absolute-text-4",
-    toggleActions: "play none restart none",
+    toggleActions: "play none restart reset",
   },
   duration: 2,
   opacity: 1,
@@ -111,7 +111,7 @@ gsap.to(".absolute-text-5", {
   scrollTrigger: {
     scroller: ".container",
     trigger: ".absolute-text-5",
-    toggleActions: "play none restart none",
+    toggleActions: "play none restart reset",
   },
   duration: 2,
   opacity: 1,
