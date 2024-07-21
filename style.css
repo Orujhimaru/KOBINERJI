@@ -14,6 +14,11 @@ body {
 * {
   margin: 0;
   padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  list-style-type: none;
 }
 
 .body {
@@ -50,7 +55,7 @@ body {
   left: 5%;
   transform: translate(0%, -50%);
   opacity: 0;
-  font-size: 120px;
+  font-size: 100px;
 }
 
 .text-color-1 {
@@ -63,6 +68,9 @@ body {
 
 .text-color-3 {
   color: rgb(255, 255, 255);
+}
+.text-color-4 {
+  color: rgb(140 140 140);
 }
 
 .main-photo {
@@ -100,15 +108,17 @@ body {
 .link {
   /* 
     text-transform: uppercase;*/
-
   text-decoration: none;
   color: #1f1f1f;
   font-size: 32px;
-  font-family: "Open Sans", sans-serif;
-
+  font-weight: 300;
   line-height: 38px;
   letter-spacing: -0.035em;
   white-space: nowrap;
+}
+
+.link:hover {
+  color: rgb(179, 176, 176);
 }
 
 .menu {
@@ -122,10 +132,6 @@ body {
 .second-nav-part {
   display: flex;
   gap: 40px;
-}
-
-.menu li {
-  display: inline-block;
 }
 
 .nav-bar {
@@ -167,6 +173,12 @@ body {
   }
 }
 
+@media (max-width: 600px) {
+  .project h3 {
+    font-size: 60px;
+  }
+}
+
 @media (max-width: 400px) {
   .link {
     font-size: 16px;
@@ -181,7 +193,7 @@ body {
   }
 }
 
-@media (max-width: 367px) {
+@media (max-width: 380px) {
   .link {
     font-size: 16px;
   }

@@ -166,3 +166,8 @@ gsap.to(".n5", {
   duration: 2,
   backgroundColor: "#5c5c5c",
 });
+
+function loadContentsPage(navigationPage) {
+  //navigate to page+navigationPage
+  window.location.href = "hizmetler1.html";
+}
