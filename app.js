@@ -125,28 +125,32 @@ gsap.to(".n5", {
 // a.addEventListener("click", loadContentsPage);
 
 const container = document.getElementById("container");
+const slider = document.getElementById("progress-slider");
 container.addEventListener("click", loadNewPage);
 
 function loadNewPage() {
   gsap.to(".container", {
     width: "100%",
+    height: "400px",
     duration: 1,
     onComplete: () => {
+      container.classList.toggle("hide-scrolling");
+      slider.classList.toggle("hide-item");
       window.location.href = "/hizmetler.html";
     },
   });
 }
 
-function loadContentsPage(navigationPage) {
-  //navigate to page+navigationPage
-  // gsap.utils.toArray(".project").forEach((el) => {
-  //   gsap.to(el, {
-  //     width: "100%",
-  //     duration: 1,
-  //   });
-  // });
-  window.location.assign("hizmetler1.html");
-}
+// function loadContentsPage(navigationPage) {
+//   //navigate to page+navigationPage
+//   // gsap.utils.toArray(".project").forEach((el) => {
+//   //   gsap.to(el, {
+//   //     width: "100%",
+//   //     duration: 1,
+//   //   });
+//   // });
+//   window.location.assign("hizmetler1.html");
+// }
 
 function delay(n) {
   n = n || 2000;
@@ -162,16 +166,16 @@ function delay(n) {
 //   tl.to()
 // }
 
-barba.init({
-  sync: true,
-  transitions: [
-    {
-      async leave(data) {
-        const done = this.async();
-        // transitionEvent();
-        await delay(1500);
-        done();
-      },
-    },
-  ],
-});
+// barba.init({
+//   sync: true,
+//   transitions: [
+//     {
+//       async leave(data) {
+//         const done = this.async();
+//         // transitionEvent();
+//         await delay(1500);
+//         done();
+//       },
+//     },
+//   ],
+// });

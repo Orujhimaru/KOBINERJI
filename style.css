@@ -139,6 +139,14 @@ ul {
   height: 15vh;
 }
 
+.hide-scrolling {
+  overflow-y: hidden;
+}
+
+.hide-item {
+  display: none;
+}
+
 @media (max-width: 1150px) {
   .progress-slider {
     right: 20px;
