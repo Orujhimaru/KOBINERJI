@@ -13,7 +13,7 @@ gsap.to(".absolute-text-1", {
     toggleActions: "play none restart reset",
   },
   left: "5%",
-  duration: 3,
+  duration: 2,
   opacity: 1,
 });
 
