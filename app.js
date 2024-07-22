@@ -1,3 +1,7 @@
+// TODO
+// SAVE THE ID, PHOTO AND THE TEXTS IN LOCALSTORAGE,
+// PULL THEM UP IN THE NEW PAGE
+
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.from(".container", {
@@ -111,12 +115,6 @@ gsap.to(".n5", {
   backgroundColor: "#5c5c5c",
 });
 
-// gsap.to(".", {
-//   onComplete: () => {
-//     window.location.href = "hizmetler1.html";
-//   },
-// });
-
 // gsap.utils.toArray(".project").forEach((el) => {
 //   gsap.to(el, {
 //     width: "100%",
@@ -126,6 +124,19 @@ gsap.to(".n5", {
 // const a = document.getElementById("1stpic");
 // a.addEventListener("click", loadContentsPage);
 
+const container = document.getElementById("container");
+container.addEventListener("click", loadNewPage);
+
+function loadNewPage() {
+  gsap.to(".container", {
+    width: "100%",
+    duration: 1,
+    onComplete: () => {
+      window.location.href = "/hizmetler.html";
+    },
+  });
+}
+
 function loadContentsPage(navigationPage) {
   //navigate to page+navigationPage
   // gsap.utils.toArray(".project").forEach((el) => {
@@ -134,5 +145,33 @@ function loadContentsPage(navigationPage) {
   //     duration: 1,
   //   });
   // });
-  window.location.href = "hizmetler1.html";
+  window.location.assign("hizmetler1.html");
 }
+
+function delay(n) {
+  n = n || 2000;
+  return new Promise((done) => {
+    setTimeout(() => {
+      done();
+    }, n);
+  });
+}
+
+// function transitionEvent() {
+//   var tl = gsap.timeline();
+//   tl.to()
+// }
+
+barba.init({
+  sync: true,
+  transitions: [
+    {
+      async leave(data) {
+        const done = this.async();
+        // transitionEvent();
+        await delay(1500);
+        done();
+      },
+    },
+  ],
+});
