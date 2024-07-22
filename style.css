@@ -1,8 +1,4 @@
-body {
-  height: 100vh;
-}
-
-.example::-webkit-scrollbar {
+body::-webkit-scrollbar {
   display: none;
 }
 
@@ -140,7 +136,7 @@ ul {
   right: 7.5%; */
   display: flex;
   align-items: center;
-  height: 15%;
+  height: 15vh;
 }
 
 @media (max-width: 1150px) {
