@@ -46,7 +46,7 @@ ul {
 .absolute-text-1 {
   position: absolute;
   top: 30%;
-  left: 5%;
+  left: -50%;
   transform: translate(0%, -50%);
   opacity: 0;
   font-size: 100px;

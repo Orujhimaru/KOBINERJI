@@ -12,7 +12,8 @@ gsap.to(".absolute-text-1", {
     trigger: ".absolute-text-1",
     toggleActions: "play none restart reset",
   },
-  duration: 2,
+  left: "5%",
+  duration: 3,
   opacity: 1,
 });
 
@@ -22,6 +23,7 @@ gsap.to(".absolute-text-2", {
     trigger: ".absolute-text-2",
     toggleActions: "play none restart reset",
   },
+  left: "5%",
   duration: 2,
   opacity: 1,
 });
@@ -32,6 +34,7 @@ gsap.to(".absolute-text-3", {
     trigger: ".absolute-text-3",
     toggleActions: "play none restart reset",
   },
+  left: "5%",
   duration: 2,
   opacity: 1,
 });
@@ -42,6 +45,7 @@ gsap.to(".absolute-text-4", {
     trigger: ".absolute-text-4",
     toggleActions: "play none restart reset",
   },
+  left: "5%",
   duration: 2,
   opacity: 1,
 });
@@ -52,6 +56,7 @@ gsap.to(".absolute-text-5", {
     trigger: ".absolute-text-5",
     toggleActions: "play none restart reset",
   },
+  left: "5%",
   duration: 2,
   opacity: 1,
 });
