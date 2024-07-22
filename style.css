@@ -32,10 +32,8 @@ ul {
   height: 85vh;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
-  position: fixed;
   bottom: 0px;
-  left: 7.5%;
-  right: 7.5%;
+  width: 85%;
 }
 
 .project {
