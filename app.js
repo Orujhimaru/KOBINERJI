@@ -1,6 +1,8 @@
 // TODO
 // SAVE THE ID, PHOTO AND THE TEXTS IN LOCALSTORAGE,
-// PULL THEM UP IN THE NEW PAGE
+// PULL THEM UP IN THE NEW PAGE / OR THE CURRENT PAGE,
+// DELETE HIZMETLER.HTML, TURN IT INTO ABOUT US PAGE
+//
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -136,7 +138,7 @@ function loadNewPage() {
     onComplete: () => {
       container.classList.toggle("hide-scrolling");
       slider.classList.toggle("hide-item");
-      window.location.href = "/hizmetler.html";
+      // window.location.href = "/hizmetler.html";
     },
   });
 }
@@ -161,21 +163,20 @@ function delay(n) {
   });
 }
 
-// function transitionEvent() {
-//   var tl = gsap.timeline();
-//   tl.to()
-// }
+function transitionEvent() {
+  var tl = gsap.timeline();
+}
 
-// barba.init({
-//   sync: true,
-//   transitions: [
-//     {
-//       async leave(data) {
-//         const done = this.async();
-//         // transitionEvent();
-//         await delay(1500);
-//         done();
-//       },
-//     },
-//   ],
-// });
+barba.init({
+  sync: true,
+  transitions: [
+    {
+      async leave(data) {
+        const done = this.async();
+        // transitionEvent();
+        await delay(1500);
+        done();
+      },
+    },
+  ],
+});
