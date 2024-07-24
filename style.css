@@ -69,7 +69,7 @@ ul {
 }
 
 .main-photo {
-  object-fit: cover;
+  object-fit: fill;
   height: 100%;
   width: 100%;
 }
@@ -87,7 +87,7 @@ ul {
 .img-main {
   height: 400px;
   width: 100%;
-  object-fit: cover;
+  object-fit: fill;
 }
 
 .progress-slider {

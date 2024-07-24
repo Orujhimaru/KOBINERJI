@@ -8,7 +8,7 @@ function addPageContent(pageNumber) {
   // Adding the new html content to the page.
   // document.
   body.innerHTML +=
-    '<img class="img-main" src="main-page-pics/pic-2.jpg">' +
+    '<img class="img-main" src="main-page-pics/pic-1.jpg">' +
     '<div class="details-container">\n' +
     '<div id="details-column"  class="details-column">' +
     innerContent(pageNumber) +
