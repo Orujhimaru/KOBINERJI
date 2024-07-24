@@ -126,11 +126,28 @@ gsap.to(".n5", {
 // const a = document.getElementById("1stpic");
 // a.addEventListener("click", loadContentsPage);
 
-const container = document.getElementById("container");
 const slider = document.getElementById("progress-slider");
-container.addEventListener("click", loadNewPage);
+// const elementData = document.getElementById('tag-id').innerHTML = '<ol><li>html data</li></ol>';
 
-function loadNewPage() {
+// const container = document.getElementById("container");
+// container.addEventListener("click", loadNewPage);
+
+const page1 = document.getElementById("page1");
+const page2 = document.getElementById("page2");
+const page3 = document.getElementById("page3");
+const page4 = document.getElementById("page4");
+const page5 = document.getElementById("page5");
+
+const page1Content = "<p> </p>"; // HERE CREATE THE HTML+CSS TEMPLATE
+// THEN, ADD THE HTML CSS CONTENT FROM A DATA JS FILE, AND ADD THEM THROUGH ARRAY INDEX :)
+
+const arrOfPages = [page1, page2, page3, page4, page5];
+for (let i = 0; i < arrOfPages.length; i++) {
+  arrOfPages[i].addEventListener("click", loadNewPage(i + 1));
+}
+// change conatiner to page1 - to sections
+
+function loadNewPage(pageNumber) {
   gsap.to(".container", {
     width: "100%",
     height: "400px",
@@ -138,9 +155,16 @@ function loadNewPage() {
     onComplete: () => {
       container.classList.toggle("hide-scrolling");
       slider.classList.toggle("hide-item");
-      // window.location.href = "/hizmetler.html";
+      addPageContent(pageNumber);
+      // window.location.href = "/hizmetler.html"; - DELETE
+      // ADD HTML CONTENT HERE THROUGH A METHOD
     },
   });
+}
+
+function addPageContent(pageNumber) {
+  // Adding the new html content to the page.
+  // document.
 }
 
 // function loadContentsPage(navigationPage) {
