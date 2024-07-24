@@ -33,13 +33,17 @@ function innerContent(pageNumber) {
   console.log(pageContent.length);
   for (let i = 0; i < pageContent.length; i++) {
     if (i % 2 === 0) {
-      class_name = " order-left";
+      class_name = " order-left special-design";
+      class_name_main = " special-design";
     } else {
       class_name = "";
+      class_name_main = "";
     }
     console.log(pageContent[i]);
     innerpageContent +=
-      '<div class="detail-element">' +
+      '<div class="detail-element' +
+      class_name_main +
+      '">' +
       '<p class="paragraph-style">' +
       pageContent[i] +
       "</p>" +
