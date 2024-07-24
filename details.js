@@ -4,6 +4,17 @@ addPageContent(pageNumber);
 const detailsColumn = document.getElementById("details-column");
 detailsColumn.childNodes[0].nodeValue = null;
 
+const loader = document.getElementById("preloader");
+window.addEventListener("load", () =>
+  setTimeout(function () {
+    hideLoader();
+  }, 2000)
+);
+
+function hideLoader() {
+  loader.style.display = "none";
+}
+
 function addPageContent(pageNumber) {
   // Adding the new html content to the page.
   // document.

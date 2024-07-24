@@ -196,6 +196,16 @@ ul {
   border-radius: 8px;
 }
 
+#preloader {
+  background: hsla(0, 0%, 25%, 0.533) url(kobinerji_gf_Animated_Logo_3.gif)
+    no-repeat center center;
+  background-size: 200px;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
 @media (max-width: 1150px) {
   .progress-slider {
     right: 20px;
