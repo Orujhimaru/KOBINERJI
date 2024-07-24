@@ -187,7 +187,7 @@ function innerContent(pageNumber) {
       '<p class="paragraph-style">' +
       pageContent[i] +
       "</p>" +
-      '<img class="iamge-style" />' +
+      '<img class="image-style" src="main-page-pics/pic-2.jpg"/>' +
       "</div>";
   }
   return innerpageContent;
