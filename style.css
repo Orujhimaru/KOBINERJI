@@ -163,7 +163,11 @@ ul {
 .detail-element {
   display: flex;
   align-items: center;
-  gap: 80px;
+  gap: 40px;
+  padding: 20px 20px;
+  border-radius: 8px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
 .details-column {
@@ -171,7 +175,7 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 60px;
   width: 100%;
 }
 
@@ -180,14 +184,16 @@ ul {
 }
 
 .paragraph-style {
-  max-width: 40ch;
+  width: 40ch;
+  line-height: 1.5;
 }
 
 .image-style {
   width: 100%;
   height: 100%;
-  max-width: 400px;
-  max-height: 400px;
+  max-width: 500px;
+  max-height: 500px;
+  border-radius: 8px;
 }
 
 @media (max-width: 1150px) {
@@ -198,6 +204,40 @@ ul {
   /* .second-nav-part {
     gap: 40px;
   } */
+}
+
+@media (max-width: 950px) {
+  .image-style {
+    max-width: 400px;
+    max-height: 400px;
+  }
+}
+
+@media (max-width: 800px) {
+  .image-style {
+    width: 50%;
+    height: 100%;
+  }
+  .paragraph-style {
+    width: 50%;
+  }
+}
+
+@media (max-width: 700px) {
+  .order-left {
+    order: 0;
+  }
+  .detail-element {
+    flex-direction: column;
+  }
+  .image-style {
+    width: 100%;
+    height: 100%;
+  }
+  .paragraph-style {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 @media (max-width: 750px) {
