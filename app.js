@@ -180,7 +180,7 @@ function addPageContent(pageNumber) {
 function innerContent(pageNumber) {
   let innerpageContent;
   const pageContent = arrayOfText[pageNumber];
-  console.log(pageContent);
+  console.log(pageContent.length);
   for (let i = 0; i < pageContent.length; i++) {
     innerpageContent +=
       '<div class="detail-element">' +
