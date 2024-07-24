@@ -3,7 +3,7 @@
 // PULL THEM UP IN THE NEW PAGE / OR THE CURRENT PAGE,
 // DELETE HIZMETLER.HTML, TURN IT INTO ABOUT US PAGE
 //
-
+var localStorage = window.localStorage;
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.from(".container", {
@@ -138,7 +138,6 @@ const page3 = document.getElementById("page3");
 const page4 = document.getElementById("page4");
 const page5 = document.getElementById("page5");
 
-const body = document.getElementById("body");
 // HERE CREATE THE HTML+CSS TEMPLATE
 // THEN, ADD THE HTML CSS CONTENT FROM A DATA JS FILE, AND ADD THEM THROUGH ARRAY INDEX :)
 
@@ -158,39 +157,13 @@ function loadNewPage(pageNumber) {
     onComplete: () => {
       container.classList.toggle("hide-scrolling");
       slider.classList.toggle("hide-item");
-      body.innerHTML += addPageContent(pageNumber);
-      // window.location.href = "/hizmetler.html"; - DELETE
-      // ADD HTML CONTENT HERE THROUGH A METHOD
+      localStorage.setItem("pageNumber", pageNumber.toString());
+      window.location.href = "/hizmetler.html";
+      // const body = document.getElementById("body");
+      // body.innerHTML += addPageContent(pageNumber);
+      // addPageContent(pageNumber); ADD IT LATER ON**
     },
   });
-}
-
-function addPageContent(pageNumber) {
-  // Adding the new html content to the page.
-  // document.
-  const newContent =
-    '<div class="details-container">' +
-    '<div class="details-column"> ' +
-    innerContent(pageNumber) +
-    "</div>" +
-    "</div>";
-  return newContent;
-}
-
-function innerContent(pageNumber) {
-  let innerpageContent;
-  const pageContent = arrayOfText[pageNumber];
-  console.log(pageContent.length);
-  for (let i = 0; i < pageContent.length; i++) {
-    innerpageContent +=
-      '<div class="detail-element">' +
-      '<p class="paragraph-style">' +
-      pageContent[i] +
-      "</p>" +
-      '<img class="image-style" src="main-page-pics/pic-2.jpg"/>' +
-      "</div>";
-  }
-  return innerpageContent;
 }
 
 // function loadContentsPage(navigationPage) {
