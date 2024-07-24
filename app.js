@@ -138,12 +138,15 @@ const page3 = document.getElementById("page3");
 const page4 = document.getElementById("page4");
 const page5 = document.getElementById("page5");
 
-const page1Content = "<p> </p>"; // HERE CREATE THE HTML+CSS TEMPLATE
+const body = document.getElementById("body");
+// HERE CREATE THE HTML+CSS TEMPLATE
 // THEN, ADD THE HTML CSS CONTENT FROM A DATA JS FILE, AND ADD THEM THROUGH ARRAY INDEX :)
 
 const arrOfPages = [page1, page2, page3, page4, page5];
 for (let i = 0; i < arrOfPages.length; i++) {
-  arrOfPages[i].addEventListener("click", loadNewPage(i + 1));
+  arrOfPages[i].addEventListener("click", function () {
+    loadNewPage(i);
+  });
 }
 // change conatiner to page1 - to sections
 
@@ -155,7 +158,7 @@ function loadNewPage(pageNumber) {
     onComplete: () => {
       container.classList.toggle("hide-scrolling");
       slider.classList.toggle("hide-item");
-      addPageContent(pageNumber);
+      body.innerHTML += addPageContent(pageNumber);
       // window.location.href = "/hizmetler.html"; - DELETE
       // ADD HTML CONTENT HERE THROUGH A METHOD
     },
@@ -165,6 +168,29 @@ function loadNewPage(pageNumber) {
 function addPageContent(pageNumber) {
   // Adding the new html content to the page.
   // document.
+  const newContent =
+    '<div class="details-container">' +
+    '<div class="details-column"> ' +
+    innerContent(pageNumber) +
+    "</div>" +
+    "</div>";
+  return newContent;
+}
+
+function innerContent(pageNumber) {
+  let innerpageContent;
+  const pageContent = arrayOfText[pageNumber];
+  console.log(pageContent);
+  for (let i = 0; i < pageContent.length; i++) {
+    innerpageContent +=
+      '<div class="detail-element">' +
+      '<p class="paragraph-style">' +
+      pageContent[i] +
+      "</p>" +
+      '<img class="iamge-style" />' +
+      "</div>";
+  }
+  return innerpageContent;
 }
 
 // function loadContentsPage(navigationPage) {
@@ -178,29 +204,29 @@ function addPageContent(pageNumber) {
 //   window.location.assign("hizmetler1.html");
 // }
 
-function delay(n) {
-  n = n || 2000;
-  return new Promise((done) => {
-    setTimeout(() => {
-      done();
-    }, n);
-  });
-}
+// function delay(n) {
+//   n = n || 2000;
+//   return new Promise((done) => {
+//     setTimeout(() => {
+//       done();
+//     }, n);
+//   });
+// }
 
-function transitionEvent() {
-  var tl = gsap.timeline();
-}
+// function transitionEvent() {
+//   var tl = gsap.timeline();
+// }
 
-barba.init({
-  sync: true,
-  transitions: [
-    {
-      async leave(data) {
-        const done = this.async();
-        // transitionEvent();
-        await delay(1500);
-        done();
-      },
-    },
-  ],
-});
+// barba.init({
+//   sync: true,
+//   transitions: [
+//     {
+//       async leave(data) {
+//         const done = this.async();
+//         // transitionEvent();
+//         await delay(1500);
+//         done();
+//       },
+//     },
+//   ],
+// });

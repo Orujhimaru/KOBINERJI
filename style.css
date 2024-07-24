@@ -147,6 +147,28 @@ ul {
   display: none;
 }
 
+.details-container {
+  width: 100%;
+}
+
+.detail-element {
+  display: flex;
+  gap: 80px;
+}
+
+.details-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+}
+
+.order-left {
+  order: -3;
+}
+
 @media (max-width: 1150px) {
   .progress-slider {
     right: 20px;
