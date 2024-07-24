@@ -6,7 +6,7 @@ const textForPage1 = [
 ];
 
 const textForPage2 = [
-  "#### Güneş Enerjisi Santrali (GES) Kurulumu - 1 resim Kobinerji, güneş enerjisi santrali (GES) kurulumu konusunda uzmanlaşmış bir mühendislik firmasıdır. ",
+  "Güneş Enerjisi Santrali (GES) Kurulumu\n Kobinerji, güneş enerjisi santrali (GES) kurulumu konusunda uzmanlaşmış bir mühendislik firmasıdır. ",
   "Çevre dostu ve sürdürülebilir enerji kaynakları kullanarak elektrik üretmenizi sağlıyoruz. *Güneş enerjisi santrali kurulumu* hizmetimiz, en son teknoloji ve yenilikçi çözümlerle, enerji ihtiyaçlarınızı karşılamada güvenilir ve etkili bir yöntem sunar. Projelerinizin tasarımından kurulumuna kadar her aşamada yanınızdayız. #### Hidroelektrik Santral (HES) Kurulumu - 1 resim Hidroelektrik santral (HES) kurulumu, yenilenebilir enerji projelerinizde önemli bir adımdır. Kobinerji, su kaynaklarından enerji elde etmenizi sağlayacak hidroelektrik santrallerinin kurulumu ve işletilmesi konularında geniş bir deneyime sahiptir. *Hidroelektrik santral kurulumu* hizmetimiz ile enerji üretiminde doğaya dost ve ekonomik çözümler sunuyoruz. Projelerinizin her aşamasında profesyonel destek sağlıyoruz.",
 ];
 

@@ -23,6 +23,10 @@ ul {
   height: 100%;
 }
 
+a {
+  cursor: pointer;
+}
+
 .container {
   font-family: "Roboto", sans-serif;
   margin: 0 auto;
@@ -184,7 +188,7 @@ ul {
 }
 
 .paragraph-style {
-  width: 40ch;
+  width: 50ch;
   line-height: 1.5;
 }
 
@@ -204,6 +208,14 @@ ul {
   width: 100%;
   position: fixed;
   z-index: 100;
+}
+
+.main-logo {
+  color: rgb(52, 175, 70);
+  font-weight: 500;
+  font-size: 50px;
+  letter-spacing: 5px;
+  font-family: "Open Sans", sans-serif;
 }
 
 @media (max-width: 1150px) {
