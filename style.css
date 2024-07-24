@@ -84,6 +84,12 @@ ul {
   height: 85%;
 }
 
+.img-main {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+
 .progress-slider {
   display: flex;
   flex-direction: column;
@@ -151,6 +157,7 @@ ul {
 .details-container {
   width: 100%;
   padding: 20px 20px;
+  margin-top: 40px;
 }
 
 .detail-element {

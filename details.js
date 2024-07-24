@@ -2,13 +2,13 @@ const body = document.getElementById("body");
 let pageNumber = JSON.parse(localStorage.getItem("pageNumber"));
 addPageContent(pageNumber);
 const detailsColumn = document.getElementById("details-column");
-
 detailsColumn.childNodes[0].nodeValue = null;
 
 function addPageContent(pageNumber) {
   // Adding the new html content to the page.
   // document.
   body.innerHTML +=
+    '<img class="img-main" src="main-page-pics/pic-2.jpg">' +
     '<div class="details-container">\n' +
     '<div id="details-column"  class="details-column">' +
     innerContent(pageNumber) +
