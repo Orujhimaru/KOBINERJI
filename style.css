@@ -50,11 +50,11 @@ a {
 .absolute-text-2,
 .absolute-text-1 {
   position: absolute;
-  top: 30%;
+  bottom: 30%;
   left: -50%;
   transform: translate(0%, -50%);
   opacity: 0;
-  font-size: 100px;
+  font-size: 120px;
 }
 
 .header-pic-container {
@@ -86,7 +86,7 @@ a {
 }
 
 .main-photo {
-  object-fit: fill;
+  object-fit: cover;
   height: 100%;
   width: 100%;
 }
@@ -149,7 +149,7 @@ a {
 
 .second-nav-part {
   display: flex;
-  gap: 40px;
+  gap: 80px;
 }
 
 .nav-bar {
