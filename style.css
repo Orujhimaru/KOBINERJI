@@ -180,6 +180,7 @@ a {
 .detail-element {
   display: flex;
   align-items: center;
+  width: 100%;
   gap: 40px;
   padding: 20px 20px;
   border-radius: 8px;
@@ -210,9 +211,8 @@ a {
 }
 
 .image-style {
-  width: 100%;
+  width: 60%;
   height: 100%;
-  max-width: 800px;
   max-height: 800px;
   border-radius: 6px;
 }

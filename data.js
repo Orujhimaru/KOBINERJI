@@ -7,7 +7,7 @@ const textForPage1 = [
 
 const textForPage2 = [
   '<span class="highlighted-text">Güneş Enerjisi Santrali (GES) Kurulumu</span> <br></br>Kobinerji, güneş enerjisi santrali (GES) kurulumu konusunda uzmanlaşmış bir mühendislik firmasıdır. Çevre dostu ve sürdürülebilir enerji kaynakları kullanarak elektrik üretmenizi sağlıyoruz. *Güneş enerjisi santrali kurulumu* hizmetimiz, en son teknoloji ve yenilikçi çözümlerle, enerji ihtiyaçlarınızı karşılamada güvenilir ve etkili bir yöntem sunar. Projelerinizin tasarımından kurulumuna kadar her aşamada yanınızdayız.',
-  '<span class="highlighted-text">Hidroelektrik Santral (HES) Kurulumu Hidroelektrik santral (HES) kurulumu</span> <br></br>Yenilenebilir enerji projelerinizde önemli bir adımdır. Kobinerji, su kaynaklarından enerji elde etmenizi sağlayacak hidroelektrik santrallerinin kurulumu ve işletilmesi konularında geniş bir deneyime sahiptir. *Hidroelektrik santral kurulumu* hizmetimiz ile enerji üretiminde doğaya dost ve ekonomik çözümler sunuyoruz. Projelerinizin her aşamasında profesyonel destek sağlıyoruz.',
+  '<span class="highlighted-text">Hidroelektrik Santral (HES) Kurulumu</span> <br></br>Yenilenebilir enerji projelerinizde önemli bir adımdır. Kobinerji, su kaynaklarından enerji elde etmenizi sağlayacak hidroelektrik santrallerinin kurulumu ve işletilmesi konularında geniş bir deneyime sahiptir. *Hidroelektrik santral kurulumu* hizmetimiz ile enerji üretiminde doğaya dost ve ekonomik çözümler sunuyoruz. Projelerinizin her aşamasında profesyonel destek sağlıyoruz.',
   '<span class="highlighted-text">Rüzgar Türbini Kurulumu Rüzgar enerjisi</span> <br></br>Ttemiz ve sürdürülebilir enerji kaynaklarından biridir. Kobinerji, rüzgar türbini kurulumu ile enerji üretiminizde yenilikçi çözümler sunar. *Rüzgar türbini kurulumu* hizmetimiz, rüzgar enerjisinden maksimum verimlilik elde etmenizi sağlar. Projelerinizin planlanmasından kurulumuna kadar her adımda size rehberlik ediyoruz. Rüzgar enerjisi ile geleceğe yatırım yapın.',
   '<span class="highlighted-text">Biyokütle Enerji Santrali Kurulumu Kobinerji, </span> <br></br>Biyokütle enerji santrali kurulumu ile atık maddeleri enerjiye dönüştürerek çevreye katkıda bulunur. *Biyokütle enerji santrali kurulumu* hizmetimiz, organik atıkları enerji üretiminde kullanarak sürdürülebilir çözümler sunar. Biyokütle enerjisi projelerinizde, en son teknolojiler ve uzman ekibimizle, verimli ve çevre dostu çözümler sağlıyoruz.',
   '<span class="highlighted-text">Enerji Santrali Bakım ve İşletme Yönetimi</span> <br></br>Enerji santrallerinin verimli çalışması için düzenli bakım ve profesyonel işletme yönetimi gereklidir. Kobinerji, enerji santrallerinizin bakım ve işletme yönetimi konusunda kapsamlı hizmetler sunar. *Enerji santrali bakım ve işletme yönetimi* hizmetimiz, santrallerinizin maksimum verimlilikle çalışmasını sağlar. Periyodik bakım, arıza onarımı ve performans izleme hizmetlerimiz ile enerji üretiminizin sürekliliğini garanti ediyoruz.',
@@ -53,7 +53,47 @@ const headerPics = [
   "main-page-pics/pic-5.jpg",
 ];
 
-const arrayOfPics = [];
+const picsForPage1 = [
+  "page1pics/pic1.jpg",
+  "page1pics/pic2.jpg",
+  "page1pics/pic3.jpg",
+  "page1pics/pic4.jpg",
+];
+const picsForPage2 = [
+  "page2pics/pic1.jpg",
+  "page2pics/pic2.jpg",
+  "page2pics/pic3.jpg",
+  "page2pics/pic4.jpg",
+  "page2pics/pic5.jpg",
+];
+const picsForPage3 = [
+  "page3pics/pic1.jpg",
+  "page3pics/pic2.jpg",
+  "page3pics/pic3.jpg",
+  "page3pics/pic4.jpg",
+];
+const picsForPage4 = [
+  "page4pics/pic1.jpg",
+  "page4pics/pic2.jpg",
+  "page4pics/pic3.jpg",
+  "page4pics/pic4.jpg",
+  "page4pics/pic5.jpg",
+  "page4pics/pic6.jpg",
+];
+const picsForPage5 = [
+  "page5pics/pic1.jpg",
+  "page5pics/pic2.jpg",
+  "page5pics/pic3.jpg",
+  "page5pics/pic4.jpg",
+];
+
+const arrayOfPics = [
+  picsForPage1,
+  picsForPage2,
+  picsForPage3,
+  picsForPage4,
+  picsForPage5,
+];
 
 const arrayOfText = [
   textForPage1,

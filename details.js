@@ -34,6 +34,7 @@ function addPageContent(pageNumber) {
 function innerContent(pageNumber) {
   let innerpageContent;
   const pageContent = arrayOfText[pageNumber];
+  const pics = arrayOfPics[pageNumber];
   console.log(pageContent.length);
   for (let i = 0; i < pageContent.length; i++) {
     if (i % 2 === 0) {
@@ -53,7 +54,9 @@ function innerContent(pageNumber) {
       "</p>" +
       '<img class="image-style ' +
       class_name +
-      '" src="main-page-pics/pic-2.jpg"/>' +
+      '" src="' +
+      pics[i] +
+      '"/>' +
       "</div>";
   }
   return innerpageContent;
