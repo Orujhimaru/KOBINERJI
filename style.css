@@ -57,6 +57,19 @@ a {
   font-size: 100px;
 }
 
+.header-pic-container {
+  position: relative;
+}
+
+.header-cont-text {
+  position: absolute;
+  bottom: 10%;
+  font-size: 60px;
+  color: rgb(255, 255, 255);
+  padding-left: 40px;
+  text-shadow: 0px 0px 6px rgb(167, 167, 167);
+}
+
 .text-color-1 {
   color: rgb(255, 255, 255);
 }
@@ -91,7 +104,7 @@ a {
 .img-main {
   height: 600px;
   width: 100%;
-  object-fit: fill;
+  object-fit: cover;
 }
 
 .progress-slider {
@@ -192,6 +205,8 @@ a {
   line-height: 1.5;
   font-size: 24px;
   font-weight: 300;
+  padding-left: 8px;
+  padding-top: 8px;
 }
 
 .image-style {
@@ -232,6 +247,7 @@ a {
 .highlighted-text {
   font-size: 28px;
   font-weight: 500;
+  margin-bottom: 6px;
 }
 
 @media (max-width: 1250px) {
@@ -240,14 +256,26 @@ a {
   }
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1450px) {
+  .image-style {
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .image-style {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 1150px) {
   .paragraph-style {
     font-size: 20px;
     font-weight: 400;
   }
 
   .image-style {
-    max-width: 400px;
+    max-width: 500px;
     max-height: 400px;
   }
 
@@ -269,7 +297,7 @@ a {
   }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 950px) {
   .order-left {
     order: 0;
   }
@@ -289,8 +317,12 @@ a {
     max-height: 500px;
   }
   .paragraph-style {
+    padding-top: 10px;
+    padding-left: 10px;
     width: 100%;
-    text-align: center;
+    line-height: 2.3rem;
+    font-size: 24px;
+    /* text-align: center; */
   }
 }
 
@@ -333,6 +365,18 @@ a {
 
   .progress-slider {
     right: 10px;
+  }
+
+  .paragraph-style {
+    font-size: 16px;
+    line-height: 1.8rem;
+  }
+
+  .header-cont-text {
+    font-size: 40px;
+  }
+  .menu {
+    margin: 10px 8px;
   }
 }
 

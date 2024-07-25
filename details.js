@@ -19,9 +19,11 @@ function addPageContent(pageNumber) {
   // Adding the new html content to the page.
   // document.
   body.innerHTML +=
-    '<img class="img-main" src="' +
+    '<div class="header-pic-container"><img class="img-main" src="' +
     headerPics[pageNumber] +
-    '">' +
+    '"> <h3 class="header-cont-text">' +
+    slidingText[pageNumber] +
+    "</h3></div>" +
     '<div class="details-container">\n' +
     '<div id="details-column"  class="details-column">' +
     innerContent(pageNumber) +
