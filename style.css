@@ -50,7 +50,7 @@ a {
 .absolute-text-2,
 .absolute-text-1 {
   position: absolute;
-  bottom: 30%;
+  bottom: 40%;
   left: -50%;
   transform: translate(0%, -50%);
   opacity: 0;
@@ -284,7 +284,10 @@ a {
   } */
 }
 
-@media (max-width: 970px) {
+@media (max-width: 1050px) {
+  .project h3 {
+    font-size: 80px;
+  }
 }
 
 @media (max-width: 800px) {
@@ -344,7 +347,7 @@ a {
   }
 
   .project h3 {
-    font-size: 80px;
+    font-size: 60px;
   }
 }
 
