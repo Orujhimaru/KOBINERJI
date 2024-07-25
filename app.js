@@ -152,7 +152,7 @@ for (let i = 0; i < arrOfPages.length; i++) {
 function loadNewPage(pageNumber) {
   gsap.to(".container", {
     width: "100%",
-    height: "400px",
+    height: "600px",
     duration: 1,
     onComplete: () => {
       container.classList.toggle("hide-scrolling");
