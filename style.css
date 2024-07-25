@@ -225,6 +225,10 @@ a {
   color: aliceblue;
 }
 
+.active-link {
+  color: rgb(179, 176, 176);
+}
+
 @media (max-width: 1150px) {
   .progress-slider {
     right: 20px;
