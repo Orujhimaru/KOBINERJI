@@ -85,6 +85,7 @@ const picsForPage5 = [
   "page5pics/pic2.jpg",
   "page5pics/pic3.jpg",
   "page5pics/pic4.jpg",
+  "page5pics/pic5.jpg",
 ];
 
 const arrayOfPics = [
