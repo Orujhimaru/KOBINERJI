@@ -4,11 +4,16 @@ addPageContent(pageNumber);
 const detailsColumn = document.getElementById("details-column");
 detailsColumn.childNodes[0].nodeValue = null;
 
+gsap.to(".header-cont-text ", {
+  left: "0%",
+  duration: 2.5,
+});
+
 const loader = document.getElementById("preloader");
 window.addEventListener("load", () =>
   setTimeout(function () {
     hideLoader();
-  }, 2000)
+  }, 1500)
 );
 
 function hideLoader() {
