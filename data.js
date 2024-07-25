@@ -45,6 +45,16 @@ const slidingText = [
   "İnsan Kaynakları Danışmanlık Hizmetleri ",
 ];
 
+const headerPics = [
+  "main-page-pics/pic-1.jpg",
+  "main-page-pics/pic-2.jpg",
+  "main-page-pics/pic-3.jpg",
+  "main-page-pics/pic-4.jpg",
+  "main-page-pics/pic-5.jpg",
+];
+
+const arrayOfPics = [];
+
 const arrayOfText = [
   textForPage1,
   textForPage2,
