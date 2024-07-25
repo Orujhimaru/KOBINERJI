@@ -10,7 +10,8 @@ body::-webkit-scrollbar {
 * {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
+  font-family: Helvetica Neue, Arial, sans-serif;
   box-sizing: border-box;
 }
 
@@ -28,7 +29,6 @@ a {
 }
 
 .container {
-  font-family: "Roboto", sans-serif;
   margin: 0 auto;
   height: 85vh;
   overflow-y: scroll;
@@ -67,7 +67,7 @@ a {
   font-size: 60px;
   color: rgb(255, 255, 255);
   padding-left: 40px;
-  text-shadow: 0px 0px 6px rgb(167, 167, 167);
+  text-shadow: 0px 0px 4px rgba(175, 175, 175, 0.907);
 }
 
 .text-color-1 {

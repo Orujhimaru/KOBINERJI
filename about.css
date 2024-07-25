@@ -35,6 +35,9 @@ main {
   font-weight: 400;
 }
 
+* {
+  font-family: Helvetica Neue, Arial, sans-serif;
+}
 .info-div-2 {
   display: flex;
   align-items: center;
@@ -82,24 +85,29 @@ main {
 .grid-item {
   padding-top: 40px;
   padding: 40px;
-  min-height: 400px;
+  min-height: 300px;
   background-color: #d0dde8;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
 }
+.bold-text-underlined {
+  text-decoration: underline;
+  font-weight: 500;
+  font-size: 1.1em;
+}
 
 .grid-item h3 {
   font-size: 20px;
   padding-bottom: 16px;
-  font-weight: 300;
+  font-weight: 400;
   width: 24ch;
 }
 
 .grid-item h4 {
   font-size: 16px;
-  font-weight: 200;
+  font-weight: 300;
   line-height: 1.5rem;
 }
 
