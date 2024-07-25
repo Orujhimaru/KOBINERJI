@@ -1,0 +1,155 @@
+main {
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info-div-1 {
+  width: 100%;
+  padding: 40px;
+  height: 400px;
+  background: no-repeat url("banner-image.jpg");
+  background-size: cover;
+  position: relative;
+}
+.header-text {
+  margin-top: auto;
+  font-size: 80px;
+  font-weight: 400;
+}
+
+.info-div-1 h4 {
+  padding-top: 40px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.absolute-pos {
+  position: absolute;
+  bottom: 80px;
+}
+
+.header-text-2 {
+  font-size: 60px;
+  font-weight: 400;
+}
+
+.info-div-2 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  background-color: #f2f2f2;
+  padding: 40px;
+}
+
+.info-div-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  background-color: #13232f;
+  padding: 40px;
+  color: white;
+}
+
+.paragraph-text {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 2rem;
+}
+
+.paragraph-text h4 {
+  padding-top: 8px;
+  margin-bottom: 8px;
+}
+
+.paragraph-text p {
+  font-size: 16px;
+  line-height: 2rem;
+}
+
+.main-grid {
+  display: grid;
+  width: 100%;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  height: fit-content;
+}
+
+.grid-item {
+  padding-top: 40px;
+  padding: 40px;
+  min-height: 400px;
+  background-color: #d0dde8;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.grid-item h3 {
+  font-size: 20px;
+  padding-bottom: 16px;
+  font-weight: 300;
+}
+
+.grid-item h4 {
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 1.5rem;
+}
+
+.color-grey {
+  background-color: #f2f2f2 !important;
+}
+
+@media (max-width: 850px) {
+  .header-text {
+    font-size: 60px;
+  }
+  .header-text-2 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-text {
+    font-size: 40px;
+  }
+  .header-text-2 {
+    font-size: 30px;
+  }
+
+  .grid-item {
+    padding: 20px;
+    padding-top: 40px;
+  }
+}
+@media (max-width: 400px) {
+  .info-div-1 {
+    padding: 10px;
+  }
+  .info-div-2 {
+    padding: 10px;
+  }
+  .info-div-3 {
+    padding: 20px;
+  }
+
+  .grid-item {
+    padding: 10px;
+  }
+
+  /* .grid-item h4 {
+    font-size: 12px;
+  }
+  .grid-item h3 {
+    font-size: 16px;
+  } */
+  .main-grid {
+    grid-template-columns: 1fr;
+  }
+}
