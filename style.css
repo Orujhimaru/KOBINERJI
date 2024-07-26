@@ -382,12 +382,12 @@ a {
     font-size: 16px;
     line-height: 1.8rem;
   }
-
-  .header-cont-text {
-    font-size: 40px;
-  }
   .menu {
     margin: 10px 8px;
+  }
+
+  .header-cont-text {
+    font-size: 30px;
   }
 }
 
@@ -410,5 +410,11 @@ a {
 
   .project h3 {
     font-size: 40px;
+  }
+}
+
+@media (max-width: 380px) {
+  .link {
+    font-size: 12px;
   }
 }
