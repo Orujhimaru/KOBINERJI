@@ -100,7 +100,7 @@ main {
 
 .grid-item h3 {
   font-size: 20px;
-  padding-bottom: 16px;
+  /* padding-bottom: 16px; */
   font-weight: 400;
   /* width: 24ch; */
 }
