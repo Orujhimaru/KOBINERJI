@@ -6,6 +6,17 @@
 var localStorage = window.localStorage;
 gsap.registerPlugin(ScrollTrigger);
 
+const loader = document.getElementById("preloader");
+window.addEventListener("load", () =>
+  setTimeout(function () {
+    hideLoader();
+  }, 1500)
+);
+
+function hideLoader() {
+  loader.style.display = "none";
+}
+
 gsap.from(".container", {
   duration: 2,
   ease: "power3.out",
