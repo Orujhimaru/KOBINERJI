@@ -65,7 +65,7 @@ a {
   position: absolute;
   bottom: 10%;
   left: -1000%;
-  width: 24ch;
+  /* width: 24ch; */
   font-size: 60px;
   color: rgb(255, 255, 255);
   padding-left: 40px;
