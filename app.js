@@ -6,22 +6,25 @@
 var localStorage = window.localStorage;
 gsap.registerPlugin(ScrollTrigger);
 
+const container = document.getElementById("container");
+
 const loader = document.getElementById("preloader");
+container.style.opacity = "0";
 window.addEventListener("load", () =>
   setTimeout(function () {
     hideLoader();
+    container.style.opacity = "1";
+    gsap.from(".container", {
+      duration: 2,
+      ease: "power3.out",
+      y: 5000,
+    });
   }, 1500)
 );
 
 function hideLoader() {
   loader.style.display = "none";
 }
-
-gsap.from(".container", {
-  duration: 2,
-  ease: "power3.out",
-  y: 5000,
-});
 
 gsap.to(".absolute-text-1", {
   scrollTrigger: {

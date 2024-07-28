@@ -365,6 +365,9 @@ a {
   .project h3 {
     font-size: 60px;
   }
+  .header-cont-text {
+    font-size: 30px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -386,10 +389,6 @@ a {
   }
   .menu {
     margin: 10px 8px;
-  }
-
-  .header-cont-text {
-    font-size: 30px;
   }
 }
 
