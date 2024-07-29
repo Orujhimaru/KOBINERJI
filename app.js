@@ -81,6 +81,17 @@ gsap.to(".absolute-text-5", {
   opacity: 1,
 });
 
+gsap.to(".absolute-text-6", {
+  scrollTrigger: {
+    scroller: ".container",
+    trigger: ".absolute-text-6",
+    toggleActions: "play none restart reset",
+  },
+  left: "5%",
+  duration: 2,
+  opacity: 1,
+});
+
 gsap.to(".n1", {
   scrollTrigger: {
     scroller: ".container",
@@ -131,6 +142,16 @@ gsap.to(".n5", {
   backgroundColor: "#5c5c5c",
 });
 
+gsap.to(".n6", {
+  scrollTrigger: {
+    scroller: ".container",
+    trigger: ".absolute-text-6",
+    toggleActions: "play reset play reset",
+  },
+  duration: 2,
+  backgroundColor: "#5c5c5c",
+});
+
 // gsap.utils.toArray(".project").forEach((el) => {
 //   gsap.to(el, {
 //     width: "100%",
@@ -151,11 +172,12 @@ const page2 = document.getElementById("page2");
 const page3 = document.getElementById("page3");
 const page4 = document.getElementById("page4");
 const page5 = document.getElementById("page5");
+const page6 = document.getElementById("page6");
 
 // HERE CREATE THE HTML+CSS TEMPLATE
 // THEN, ADD THE HTML CSS CONTENT FROM A DATA JS FILE, AND ADD THEM THROUGH ARRAY INDEX :)
 
-const arrOfPages = [page1, page2, page3, page4, page5];
+const arrOfPages = [page1, page2, page3, page4, page5, page6];
 for (let i = 0; i < arrOfPages.length; i++) {
   arrOfPages[i].addEventListener("click", function () {
     loadNewPage(i);

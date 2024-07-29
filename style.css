@@ -44,6 +44,7 @@ a {
   position: relative;
 }
 
+.absolute-text-6,
 .absolute-text-4,
 .absolute-text-5,
 .absolute-text-3,
@@ -55,6 +56,12 @@ a {
   transform: translate(0%, -50%);
   opacity: 0;
   font-size: 120px;
+  width: 100%;
+}
+
+.absolute-text-2 {
+  font-size: 100px;
+  bottom: 25%;
 }
 
 .header-pic-container {
@@ -69,7 +76,7 @@ a {
   font-size: 60px;
   color: rgb(255, 255, 255);
   padding-left: 40px;
-  text-shadow: 0px 0px 4px rgba(175, 175, 175, 0.907);
+  text-shadow: -2px 2px 2px rgb(101 90 90);
 }
 
 .text-color-1 {
@@ -182,6 +189,7 @@ a {
 .detail-element {
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
   width: 100%;
   gap: 40px;
   padding: 20px 20px;
@@ -216,7 +224,7 @@ a {
   width: 60%;
   height: 100%;
   max-height: 800px;
-  border-radius: 6px;
+  border-radius: 2px;
 }
 
 #preloader {
@@ -294,7 +302,7 @@ a {
   } */
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1150px) {
   .project h3 {
     font-size: 80px;
   }
