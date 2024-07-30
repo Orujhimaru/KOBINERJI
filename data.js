@@ -1,11 +1,11 @@
-const textForPage1 = [
+const textForPage3 = [
   '<span class="highlighted-text">Endüstriyel Sanayi Tesisleri Kurulumu</span> <br></br>\n Kobinerji, endüstriyel sanayi tesisleri kurulumunda uzmanlaşmıştır. Modern teknoloji ve yüksek mühendislik standartları ile üretim tesislerinizi verimli ve sürdürülebilir bir şekilde inşa ediyoruz Sanayi tesislerinizin maksimum verimlilikle çalışmasını sağlamak için profesyonel çözümler sunuyoruz. Endüstriyel sanayi tesisleri kurulumal anında uzman ekibimizle projelerinizi zamanında ve bütçe dostu bir şekilde tamamlıyoruz.',
   '<span class="highlighted-text">Konut ve Ticari Bina İnşaatı</span> <br></br>   Konut ve ticari bina inşaatında güvenilir bir ortak arıyorsanız Kobinerji doğru adres. Modern yaşam alanları ve iş yerleri için estetik, dayanıklı ve enerji verimli çözümler sunuyoruz. Konut ve ticari bina inşaatı hizmetlerimiz, müşterilerimizin beklentilerini aşan projeler ile fark yaratıyor. Yenilikçi tasarımlar ve yüksek kalite standartları ile inşa ettiğimiz binalar, konfor ve işlevselliği bir araya getiriyor.',
   '<span class="highlighted-text">Alt Yapı ve Üst Yapı İnşaatı </span> <br></br>  Kobinerji, altyapı ve üstyapı inşaat projelerinde kapsamlı hizmetler sunar. Yol, köprü, su ve kanalizasyon sistemleri gibi altyapı projelerinden, kamu binaları ve ticari yapılar gibi üstyapı projelerine kadar geniş bir yelpazede hizmet veriyoruz. Alt yapı ve üst yapı inşaatı alanında deneyimli ekibimizle projelerinizi güvenle tamamlıyoruz. Kalite, güvenlik ve sürdürülebilirlik odaklı çözümlerimizle, topluma değer katan yapılar inşa ediyoruz.',
   '<span class="highlighted-text">Renovasyon ve Restorasyon Hizmetleri </span> <br></br> Mevcut yapılarınızı modernize etmek veya tarihi binaları restore etmek için profesyonel renovasyon ve restorasyon hizmetlerimizden yararlanın. Kobinerji, estetik ve fonksiyonel iyileştirmeler ile yapılarınızı yeniden hayata döndürüyor.  Renovasyon ve restorasyon hizmetleri kapsamında, enerji verimliliğini artıran çözümler ve modern tasarım yaklaşımları ile binalarınızı geleceğe hazırlıyoruz. Tarihi dokuyu korurken, modern yaşam standartlarını sunuyoruz.',
 ];
 
-const textForPage2 = [
+const textForPage4 = [
   '<span class="highlighted-text">Bypass Kum Dolgu Malzeme Temini </span> <br></br> Kobinerji, inşaat projeleriniz için kaliteli bypass kum dolgu malzemeleri temin eder. İnşaat sahalarının temel ihtiyaçlarından olan bypass kum ve dolgu malzemeleri, dayanıklılık ve stabilite sağlar. Bypass kum dolgu malzeme temini hizmetimiz, projelerinizin sorunsuz ilerlemesi için gerekli olan kaliteli ve güvenilir malzemeleri zamanında ve uygun maliyetlerle sunar.',
   '<span class="highlighted-text">Hafriyat Kazısı ve Taşıma İşleri</span> <br></br>Kobinerji, hafriyat kazısı ve taşıma işlerinde profesyonel çözümler sunar. Yüksek kapasiteli ekipmanlarımız ve deneyimli ekibimizle, her türlü hafriyat işini hızlı ve etkili bir şekilde gerçekleştiriyoruz. Hafriyat kazısı ve taşıma işleri alanındaki uzmanlığımız, inşaat projelerinizin temel hazırlık aşamalarında size büyük avantaj sağlar.',
   '<span class="highlighted-text">Kepçe, Yükleyici ve Ekskavatör Temini</span> <br></br>İnşaat ve hafriyat projeleriniz için gerekli olan kepçe, yükleyici ve ekskavatör gibi ağır iş makinelerini temin ediyoruz. Kobinerji, geniş makine parkı ile projelerinizin ihtiyaç duyduğu her türlü ekipmanı sağlar. Kepçe, yükleyici ve ekskavatör temini hizmetimiz, projelerinizin zamanında ve verimli bir şekilde tamamlanmasını destekler.',
@@ -13,7 +13,7 @@ const textForPage2 = [
   '<span class="highlighted-text">İnşaat ve Yıkım Atıkları Yönetimi</span> <br></br>Kobinerji, inşaat ve yıkım atıklarının yönetimi konusunda uzmanlaşmıştır. Çevre dostu ve sürdürülebilir atık yönetimi çözümlerimiz ile inşaat projelerinizin çevresel etkilerini en aza indiriyoruz. İnşaat ve yıkım atıkları yönetimi hizmetimiz, atıkların toplanması, taşınması ve geri dönüşümü süreçlerini kapsar. Projelerinizin çevreye duyarlı ve yasal mevzuatlara uygun bir şekilde ilerlemesini sağlıyoruz',
 ];
 
-const textForPage3 = [
+const textForPage1 = [
   '<span class="highlighted-text">Güneş Enerjisi Santrali (GES) Kurulumu</span> <br></br>Kobinerji, güneş enerjisi santrali (GES) kurulumu konusunda uzmanlaşmış bir mühendislik firmasıdır. Çevre dostu ve sürdürülebilir enerji kaynakları kullanarak elektrik üretmenizi sağlıyoruz. Güneş enerjisi santrali kurulumu hizmetimiz, en son teknoloji ve yenilikçi çözümlerle, enerji ihtiyaçlarınızı karşılamada güvenilir ve etkili bir yöntem sunar. Projelerinizin tasarımından kurulumuna kadar her aşamada yanınızdayız.',
   '<span class="highlighted-text">Hidroelektrik Santral (HES) Kurulumu</span> <br></br>Yenilenebilir enerji projelerinizde önemli bir adımdır. Kobinerji, su kaynaklarından enerji elde etmenizi sağlayacak hidroelektrik santrallerinin kurulumu ve işletilmesi konularında geniş bir deneyime sahiptir. Hidroelektrik santral kurulumu hizmetimiz ile enerji üretiminde doğaya dost ve ekonomik çözümler sunuyoruz. Projelerinizin her aşamasında profesyonel destek sağlıyoruz.',
   '<span class="highlighted-text">Rüzgar Türbini Kurulumu Rüzgar enerjisi</span> <br></br>Ttemiz ve sürdürülebilir enerji kaynaklarından biridir. Kobinerji, rüzgar türbini kurulumu ile enerji üretiminizde yenilikçi çözümler sunar. Rüzgar türbini kurulumu hizmetimiz, rüzgar enerjisinden maksimum verimlilik elde etmenizi sağlar. Projelerinizin planlanmasından kurulumuna kadar her adımda size rehberlik ediyoruz. Rüzgar enerjisi ile geleceğe yatırım yapın.',
@@ -21,14 +21,14 @@ const textForPage3 = [
   '<span class="highlighted-text">Enerji Santrali Bakım ve İşletme Yönetimi</span> <br></br>Enerji santrallerinin verimli çalışması için düzenli bakım ve profesyonel işletme yönetimi gereklidir. Kobinerji, enerji santrallerinizin bakım ve işletme yönetimi konusunda kapsamlı hizmetler sunar. Enerji santrali bakım ve işletme yönetimi hizmetimiz, santrallerinizin maksimum verimlilikle çalışmasını sağlar. Periyodik bakım, arıza onarımı ve performans izleme hizmetlerimiz ile enerji üretiminizin sürekliliğini garanti ediyoruz.',
 ];
 
-const textForPage4 = [
+const textForPage5 = [
   '<span class="highlighted-text">Tedarik Zinciri Yönetimi Kobinerji</span> <br></br>Tedarik zinciri yönetimi hizmetleri ile işletmelerin lojistik süreçlerini optimize eder. Tedarik zinciri yönetimi alanındaki uzmanlığımız, ham maddeden nihai ürüne kadar olan süreçte verimlilik ve maliyet tasarrufu sağlar. Gelişmiş lojistik çözümlerimizle, tedarik zincirinizin her aşamasında şeffaflık ve etkinlik sunuyoruz.',
   '<span class="highlighted-text">Depolama ve stok yönetimi</span> <br></br>Hizmetlerimiz, işletmenizin malzeme ve ürün stoklarını en verimli şekilde yönetmesine yardımcı olur. Depolama ve stok yönetimi çözümlerimiz, envanter takibi, depolama alanı optimizasyonu ve hızlı erişim sağlar. Kobinerji, depo yönetim sistemleri ile işletmenizin operasyonel verimliliğini artırır. ',
   '<span class="highlighted-text">Nakliye ve Dağıtım Hizmetleri</span> <br></br>Kobinerji, nakliye ve dağıtım hizmetlerinde hızlı ve güvenilir çözümler sunar. Nakliye ve dağıtım hizmetleri kapsamında, ürünlerinizi zamanında ve güvenli bir şekilde hedef noktaya ulaştırıyoruz. Geniş araç filomuz ve lojistik ağımız ile her türlü nakliye ihtiyacınızı karşılıyoruz.',
   '<span class="highlighted-text">Gümrük ve Lojistik Danışmanlık</span> <br></br> Gümrük işlemleri ve lojistik süreçlerinizde profesyonel danışmanlık hizmeti sunuyoruz. Gümrük ve lojistik danışmanlık hizmetlerimiz, uluslararası ticaretin karmaşık süreçlerini yönetmenize yardımcı olur. Kobinerji, mevzuata uygunluk, belge hazırlama ve gümrükleme işlemlerinde uzman desteği sağlar.',
 ];
 
-const textForPage5 = [
+const textForPage2 = [
   '<span class="highlighted-text">Enerji Verimliliği Danışmanlık Hizmetleri</span> <br></br> Kobinerji, enerji verimliliği danışmanlık hizmetleri ile işletmenizin enerji tüketimini optimize eder ve maliyetleri düşürür. Enerji verimliliği danışmanlık hizmetleri kapsamında enerji etütleri, verimlilik artırıcı projeler (VAP) ve ISO 50001 enerji yönetim sistemleri kurulumu sunuyoruz. Uzman ekibimizle enerji tüketiminizi azaltarak, çevresel etkilerinizi en aza indiriyoruz.',
   '<span class="highlighted-text">Elektrik Proje İşleri</span> <br></br>Elektrik proje işlerinde Kobinerjinin uzmanlığına güvenin. Elektrik proje işleri hizmetimiz, yüksek kalite standartlarında ve güvenlik yönetmeliklerine uygun projeler geliştirmeyi kapsar. Konut, ticari ve endüstriyel projeleriniz için en uygun elektrik çözümlerini sunuyoruz. Projelerinizin her aşamasında teknik destek sağlıyoruz.',
   '<span class="highlighted-text">Taahhütlü İşler </span> <br></br>Kobinerji, taahhütlü işler alanında kapsamlı hizmetler sunar. Taahhütlü işler kapsamında, inşaat ve mühendislik projelerinizin planlanması, yönetimi ve gerçekleştirilmesi süreçlerini üstleniyoruz. Profesyonel ekibimizle projelerinizi zamanında ve bütçe dahilinde tamamlayarak, yüksek müşteri memnuniyeti sağlıyoruz.',
@@ -46,20 +46,20 @@ const textForPage6 = [
 ];
 
 const slidingText = [
+  "Enerji Santrali Kurulum ve Yönetim Hizmetleri ",
+  "Mühendislik Hizmetleri ",
   "İnşaat Hizmetleri ",
   "Hafriyat Kazısı ve Taşıma İşleri",
-  "Enerji Santrali Kurulum ve Yönetim Hizmetleri ",
   "Lojistik Hizmetleri ",
-  "Mühendislik Hizmetleri ",
   "İnsan Kaynakları Danışmanlık Hizmetleri ",
 ];
 
 const headerPics = [
+  "main-page-pics/pic-3.jpg",
+  "main-page-pics/pic-5.jpg",
   "main-page-pics/pic-1.jpg",
   "main-page-pics/pic-2.jpg",
-  "main-page-pics/pic-3.jpg",
   "main-page-pics/pic-4.jpg",
-  "main-page-pics/pic-5.jpg",
   "main-page-pics/pic-6.jpg",
 ];
 
@@ -108,11 +108,11 @@ const picsForPage6 = [
 ];
 
 const arrayOfPics = [
+  picsForPage3,
+  picsForPage5,
   picsForPage1,
   picsForPage2,
-  picsForPage3,
   picsForPage4,
-  picsForPage5,
   picsForPage6,
 ];
 
