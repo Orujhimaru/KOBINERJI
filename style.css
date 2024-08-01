@@ -318,6 +318,16 @@ a {
   gap: 10px;
 }
 
+.flex-column h4 {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.flex-column h3 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
 .flex-row-main {
   display: flex;
   width: 100%;
@@ -338,13 +348,52 @@ a {
   height: 24px;
 }
 
+.flex-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  width: 100%;
+  gap: 10px;
+}
+
+.flex-1 {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input-label {
+  font-size: 14px;
+}
+.input-field {
+  height: 37px;
+  border: 1px solid rgb(132, 132, 132);
+}
+.text-box {
+  height: 60px;
+  width: 100%;
+}
+
+.input-label-special {
+  margin-bottom: 10px;
+  font-size: 14px;
+  margin-right: auto;
+}
+
+@media (max-width: 600px) {
+  .flex-form {
+    flex-direction: column;
+  }
+}
+
 @media (max-width: 800px) {
   .flex-row-main {
-    flex-direction: column;
-    gap: 40px;
-    align-items: center;
-    text-align: center;
+    flex-wrap: wrap;
+    gap: 20px;
   }
+
   .form-field-container {
     align-items: center;
   }
