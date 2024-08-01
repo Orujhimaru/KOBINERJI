@@ -60,10 +60,10 @@ a {
   width: 80%;
 }
 
-.absolute-text-2 {
+/* .absolute-text-2 {
   font-size: 100px;
   bottom: 25%;
-}
+} */
 
 .header-pic-container {
   position: relative;
@@ -308,9 +308,9 @@ a {
 }
 
 @media (max-width: 1150px) {
-  .second-nav-part {
+  /* .second-nav-part {
     flex-wrap: wrap;
-  }
+  } */
 }
 
 @media (max-width: 1150px) {
@@ -388,7 +388,7 @@ a {
 @media (max-width: 950px) {
   .menu {
     flex-direction: column;
-    gap: 40px;
+    gap: 20px;
   }
 
   .second-nav-part {
