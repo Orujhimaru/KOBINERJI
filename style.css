@@ -389,6 +389,7 @@ a {
   border: 1px solid rgb(132, 132, 132);
 }
 .text-box {
+  margin-top: 10px;
   height: 60px;
   width: 100%;
 }
