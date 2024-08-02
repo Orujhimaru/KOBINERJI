@@ -10,8 +10,8 @@ body::-webkit-scrollbar {
 * {
   margin: 0;
   padding: 0;
-  /* font-family: "Roboto", sans-serif; */
-  font-family: Helvetica Neue, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
+  /* font-family: Helvetica Neue, Arial, sans-serif; */
   box-sizing: border-box;
 }
 
@@ -301,9 +301,16 @@ a {
   margin-top: 40px;
   padding: 20px;
   display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.flex-column-main {
+  display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  flex-grow: 1;
 }
 
 .form-field-container h2 {
@@ -331,13 +338,17 @@ a {
 .flex-row-main {
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 40px;
 }
 
 .flex-row-logo {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
   flex-wrap: wrap;
+  align-self: baseline;
+  margin-top: 8px;
 }
 .flex-row-logo > a {
   align-self: center;
@@ -382,7 +393,7 @@ a {
   margin-right: auto;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 670px) {
   .flex-form {
     flex-direction: column;
   }
