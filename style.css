@@ -397,6 +397,9 @@ a {
   .flex-form {
     flex-direction: column;
   }
+  .flex-row-logo {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 800px) {
