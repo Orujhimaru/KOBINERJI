@@ -7,6 +7,13 @@ body::-webkit-scrollbar {
   scrollbar-width: none; /* Firefox */
 }
 
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -379,6 +386,22 @@ a {
 .message-field {
   background-color: #d9e4ed;
   padding: 20px;
+  margin-bottom: 20px;
+}
+
+.send-btn {
+  color: white;
+  background-color: #b35c3c;
+  float: right;
+  border: #b35c3c 1px solid;
+  padding: 12px 60px;
+  /* margin-top: 10px; */
+}
+
+.send-btn:hover {
+  transition: color, background-color 0.5s;
+  background-color: white;
+  color: #b35c3c;
 }
 
 .flex-1 {
@@ -590,7 +613,7 @@ a {
   }*/
 
   .second-nav-part {
-    gap: 20px;
+    gap: 10px;
   }
 
   .progress-slider {
@@ -603,6 +626,11 @@ a {
 
   .project h3 {
     font-size: 40px;
+  }
+
+  .menu {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
   }
 }
 
