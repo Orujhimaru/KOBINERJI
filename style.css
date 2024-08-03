@@ -295,6 +295,13 @@ a {
   margin-bottom: 16px;
 }
 
+.input-field:hover {
+  border: 1.5px solid rgb(54, 54, 54);
+}
+.text-box:hover {
+  border: 1.5px solid rgb(54, 54, 54);
+}
+
 .form-field-container {
   background-color: #d9e4ed;
   width: 100%;
