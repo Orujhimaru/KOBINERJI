@@ -393,7 +393,11 @@ a {
 .send-btn {
   color: white;
   background-color: #b35c3c;
-  float: right;
+  /* float: right; */
+  max-width: 200px;
+  display: block;
+  margin-left: auto;
+
   border: #b35c3c 1px solid;
   padding: 12px 60px;
   /* margin-top: 10px; */
@@ -421,7 +425,7 @@ a {
 }
 .text-box {
   margin-top: 10px;
-  height: 60px;
+  height: 100px;
   width: 100%;
 }
 

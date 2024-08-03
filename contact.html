@@ -65,35 +65,65 @@
           </div>
         </div>
         <div class="flex-row-logo">
-          <a><img class="logo-social" src="logos/linkedin.png" /></a>
-          <a><img class="logo-social" src="logos/twitter.png" /></a>
-          <a><img class="logo-social" src="logos/instagram.png" /></a>
-          <a><img class="logo-social" src="logos/whatsapp.png" /></a>
-          <a><img class="logo-social" src="logos/pinterest.png" /></a>
-          <a><img class="logo-social" src="logos/youtube.png" /></a>
+          <a href="https://www.linkedin.com/company/kobinerji/" target="_blank"
+            ><img class="logo-social" src="logos/linkedin.png"
+          /></a>
+          <a href="https://x.com/kobinerji" target="_blank"
+            ><img class="logo-social" src="logos/twitter.png"
+          /></a>
+          <a
+            href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Fkobinerji%2F&is_from_rle"
+            target="_blank"
+            ><img class="logo-social" src="logos/instagram.png"
+          /></a>
+          <a
+            href="https://api.whatsapp.com/send/?phone=905357145288&text&type=phone_number&app_absent=0"
+            target="_blank"
+            ><img class="logo-social" src="logos/whatsapp.png"
+          /></a>
+          <a
+            href="https://www.pinterest.com/kobinerji/?invite_code=57f0ed34a6b24befba8051de8b94a23a&sender=552817060418204382"
+            target="_blank"
+            ><img class="logo-social" src="logos/pinterest.png"
+          /></a>
+          <a
+            href="https://www.youtube.com/channel/UCk6ofP4KnpbnVivwMK9OnlA"
+            target="_blank"
+            ><img class="logo-social" src="logos/youtube.png"
+          /></a>
         </div>
       </div>
-      <div class="flex-form">
-        <div class="flex-1">
-          <label class="input-label" for="firstname">İsminiz</label>
-          <input class="input-field" type="text" name="firstname" required />
+      <form action="https://api.web3forms.com/submit" method="POST" id="form">
+        <input
+          type="hidden"
+          name="access_key"
+          value="be98caf7-5307-47db-acd5-2c8b2eaf4999"
+        />
+        <input type="checkbox" name="botcheck" id="" style="display: none" />
+        <div class="flex-form">
+          <div class="flex-1">
+            <label class="input-label" for="firstname">İsminiz</label>
+            <input class="input-field" type="text" name="firstname" required />
+          </div>
+          <div class="flex-1">
+            <label class="input-label" for="lastname">Soyisminiz</label>
+            <input class="input-field" type="text" name="lastname" required />
+          </div>
+          <div class="flex-1">
+            <label class="input-label" for="email">Email * </label>
+            <input class="input-field" type="email" name="email" required />
+          </div>
         </div>
-        <div class="flex-1">
-          <label class="input-label" for="lastname">Soyisminiz</label>
-          <input class="input-field" type="text" name="lastname" required />
+        <div class="message-field">
+          <label class="input-label-special" for="email">Mesajınız</label>
+          <textarea id="myText" class="text-box" type="text"></textarea>
+          <button type="submit" class="send-btn">Gönder</button>
         </div>
-        <div class="flex-1">
-          <label class="input-label" for="email">Email * </label>
-          <input class="input-field" type="email" name="email" required />
-        </div>
-      </div>
-      <div class="message-field">
-        <label class="input-label-special" for="email">Mesajınız</label>
-        <input class="text-box" type="text" />
-        <button class="send-btn">Gönder</button>
-      </div>
+
+        <div id="result"></div>
+      </form>
     </div>
 
-    <script src="about.js"></script>
+    <script src="contact.js"></script>
   </body>
 </html>
