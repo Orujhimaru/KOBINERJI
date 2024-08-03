@@ -386,6 +386,7 @@ a {
 .message-field {
   background-color: #d9e4ed;
   padding: 20px;
+  padding-top: 0;
   margin-bottom: 20px;
 }
 
