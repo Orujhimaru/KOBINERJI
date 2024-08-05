@@ -435,6 +435,19 @@ a {
   margin-right: auto;
 }
 
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* grid-template-rows: repeat(8, 5vw); */
+  grid-gap: 15px;
+  padding: 50px;
+}
+
+.gallery img {
+  max-width: 100%;
+  display: block;
+}
+
 @media (max-width: 670px) {
   .flex-form {
     flex-direction: column;
