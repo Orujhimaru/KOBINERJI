@@ -477,6 +477,12 @@ a {
   opacity: 0;
 }
 
+.logo-div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .certificate-images:hover {
   translate: 0, -20px;
   /* translate(0,-20px); */
@@ -614,7 +620,7 @@ a {
   }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 1000px) {
   .menu {
     flex-direction: column;
     gap: 20px;
