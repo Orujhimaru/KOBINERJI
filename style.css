@@ -522,6 +522,10 @@ a {
   text-overflow: ellipsis;
 }
 
+.text-on-hover {
+  color: rgb(68 68 68);
+}
+
 .text-on-hover:hover {
   color: #b35c3c;
 }
@@ -581,6 +585,7 @@ a {
 }
 
 .blog-details-minor {
+  font-weight: 300;
   font-size: 14px;
 }
 
