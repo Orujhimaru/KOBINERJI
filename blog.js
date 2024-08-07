@@ -9,27 +9,33 @@ function hideLoader() {
   loader.style.display = "none";
 }
 
-const blogs = document.getElementById("blog-all");
+// const blogs = document.getElementById("blog-all");
+// const page1 = document.getElementById("blog1");
+// const page2 = document.getElementById("blog2");
+// const page3 = document.getElementById("blog3");
 
-blogs.addEventListener("click", function () {
-  loadNewPage();
-});
+// const arrOfBlogs = [page1, page2, page3];
+// for (let i = 0; i < arrOfBlogs.length; i++) {
+//   arrOfPages[i].addEventListener("click", function () {
+//     loadNewPage(i);
+//   });
+// }
 
-//   // change conatiner to page1 - to sections
+// //   // change conatiner to page1 - to sections
 
-function loadNewPage() {
-  gsap.to(".blog-area", {
-    opacity: 0,
-    duration: 1,
-    onComplete: () => {
-    //   container.classList.toggle("hide-scrolling");
-    //   slider.classList.toggle("hide-item");
-    //   localStorage.setItem("pageNumber", pageNumber.toString());
-    //   window.location.href = "/hizmetler.html";
-      // const body = document.getElementById("body");
-      // body.innerHTML += addPageContent(pageNumber);
-      // addPageContent(pageNumber); ADD IT LATER ON**
-      DISPLAY FROM NONE TO BLOCK ***.
-    },
-  });
-}
+// function loadNewPage() {
+//   gsap.to(".blog-area", {
+//     opacity: 0,
+//     duration: 1,
+//     onComplete: () => {
+//       //   container.classList.toggle("hide-scrolling");
+//       //   slider.classList.toggle("hide-item");
+//       //   localStorage.setItem("pageNumber", pageNumber.toString());
+//       //   window.location.href = "/hizmetler.html";
+//       // const body = document.getElementById("body");
+//       // body.innerHTML += addPageContent(pageNumber);
+//       // addPageContent(pageNumber); ADD IT LATER ON**
+//       // DISPLAY FROM NONE TO BLOCK ***.
+//     },
+//   });
+// }
