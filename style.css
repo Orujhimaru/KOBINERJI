@@ -548,6 +548,17 @@ a {
   align-items: center;
 }
 
+.blog-details h5 {
+  font-weight: 400;
+}
+
+.blog-h3 {
+  font-weight: 400;
+  font-size: 20px;
+  color: #bebebe;
+  align-self: flex-start;
+}
+
 .line {
   width: 100%;
   height: 2px;
