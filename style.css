@@ -687,6 +687,16 @@ a {
   gap: 10px;
 }
 
+@media (max-width: 1120px) {
+  .blog-post {
+    flex-direction: column;
+  }
+
+  .blog-post-text {
+    padding: 20px;
+  }
+}
+
 @media (max-width: 670px) {
   .flex-form {
     flex-direction: column;
