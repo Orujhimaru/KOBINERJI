@@ -244,6 +244,97 @@ a {
   border-radius: 2px;
 }
 
+.cookie-bar {
+  width: 100%;
+  padding: 20px 40px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 100px;
+  color: rgb(52, 52, 52);
+}
+
+.cookie-bar a {
+  color: inherit;
+}
+
+.vertical-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#consentBox {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+#consentBox.hide {
+  display: none;
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.8);
+  transition: all 0.3s ease;
+}
+
+::selection {
+  color: #fff;
+  background: #61a955;
+}
+
+#consentContent p {
+  color: #858585;
+  margin: 10px 0 20px 0;
+}
+
+#consentContent .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.consentButton,
+.rejectButton {
+  padding: 12px 30px;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.consentButton {
+  background: #2a910b;
+  margin-right: 10px;
+}
+
+.rejectButton {
+  color: #111211;
+  background: transparent;
+  border: 2px solid #099c2c;
+  text-decoration: none;
+}
+
+#consentBox img {
+  max-width: 90px;
+}
+
+#consentHeader {
+  font-size: 25px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
 #preloader {
   background: rgba(0, 0, 0, 0.6) url(kobinerji_gf_Animated_Logo_3.gif) no-repeat
     center center;
