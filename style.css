@@ -451,8 +451,8 @@ a {
   display: flex;
   max-width: 1320px;
   flex-direction: column;
-  margin-left: 7.5%;
-  margin-right: 7.5%;
+  margin: 0 auto;
+  padding-inline: 2%;
 }
 
 .contact-details h2 {

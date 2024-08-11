@@ -1,4 +1,4 @@
-const body = document.getElementById("body");
+const header = document.getElementById("header");
 let pageNumber = JSON.parse(localStorage.getItem("pageNumber"));
 addPageContent(pageNumber);
 const detailsColumn = document.getElementById("details-column");
@@ -22,7 +22,7 @@ function hideLoader() {
 function addPageContent(pageNumber) {
   // Adding the new html content to the page.
   // document.
-  body.innerHTML +=
+  header.innerHTML +=
     '<div class="header-pic-container"><img class="img-main" src="' +
     headerPics[pageNumber] +
     '"> <h3 class="header-cont-text">' +
@@ -31,7 +31,6 @@ function addPageContent(pageNumber) {
     '<div class="details-container">\n' +
     '<div id="details-column"  class="details-column">' +
     innerContent(pageNumber) +
-    "</div>" +
     "</div>";
 }
 
