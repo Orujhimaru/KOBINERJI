@@ -6,6 +6,9 @@
 var localStorage = window.localStorage;
 gsap.registerPlugin(ScrollTrigger);
 
+container.classList.remove("hide-scrolling");
+slider.classList.remove("hide-item");
+
 const container = document.getElementById("container");
 
 const loader = document.getElementById("preloader");

@@ -23,7 +23,7 @@ function addPageContent(pageNumber) {
   // Adding the new html content to the page.
   // document.
   header.innerHTML +=
-    '<div class="header-pic-container"><img class="img-main" src="' +
+    '<img class="img-main" src="' +
     headerPics[pageNumber] +
     '"> <h3 class="header-cont-text">' +
     slidingText[pageNumber] +
