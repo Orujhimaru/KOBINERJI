@@ -193,8 +193,8 @@ function loadNewPage(pageNumber) {
     height: "600px",
     duration: 1,
     onComplete: () => {
-      container.classList.toggle("hide-scrolling");
-      slider.classList.toggle("hide-item");
+      container.classList.add("hide-scrolling");
+      slider.classList.add("hide-item");
       localStorage.setItem("pageNumber", pageNumber.toString());
       window.location.href = "/hizmetler.html";
       // const body = document.getElementById("body");
