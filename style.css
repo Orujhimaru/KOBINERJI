@@ -445,6 +445,10 @@ a {
   text-decoration: none;
 }
 
+.img-text {
+  position: relative;
+}
+
 /* CONTACT ME */
 
 .contact-details {
