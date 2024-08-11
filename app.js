@@ -6,10 +6,11 @@
 var localStorage = window.localStorage;
 gsap.registerPlugin(ScrollTrigger);
 
+const container = document.getElementById("container");
+const slider = document.getElementById("progress-slider");
+
 container.classList.remove("hide-scrolling");
 slider.classList.remove("hide-item");
-
-const container = document.getElementById("container");
 
 const loader = document.getElementById("preloader");
 container.style.opacity = "0";
@@ -163,8 +164,6 @@ gsap.to(".n6", {
 // });
 // const a = document.getElementById("1stpic");
 // a.addEventListener("click", loadContentsPage);
-
-const slider = document.getElementById("progress-slider");
 // const elementData = document.getElementById('tag-id').innerHTML = '<ol><li>html data</li></ol>';
 
 // const container = document.getElementById("container");
