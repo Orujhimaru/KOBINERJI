@@ -19,9 +19,6 @@ reloadPage();
 var localStorage = window.localStorage;
 gsap.registerPlugin(ScrollTrigger);
 
-const container = document.getElementById("container");
-const slider = document.getElementById("progress-slider");
-
 container.classList.remove("hide-scrolling");
 console.log("removed");
 slider.classList.remove("hide-item");
