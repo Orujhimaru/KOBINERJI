@@ -3,7 +3,7 @@
 // PULL THEM UP IN THE NEW PAGE / OR THE CURRENT PAGE,
 // DELETE HIZMETLER.HTML, TURN IT INTO ABOUT US PAGE
 //
-location.reload(true);
+history.pushState(null, null, window.location.href);
 var localStorage = window.localStorage;
 gsap.registerPlugin(ScrollTrigger);
 
