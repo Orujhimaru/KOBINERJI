@@ -25,9 +25,17 @@ const slider = document.getElementById("progress-slider");
 
 const loader = document.getElementById("preloader");
 
-container.classList.remove("hide-scrolling");
-slider.classList.remove("hide-item");
-container.classList.add("remove-gsap");
+window.addEventListener(
+  "pageshow",
+  function (evt) {
+    if (evt.persisted) {
+      setTimeout(function () {
+        window.location.reload();
+      }, 10);
+    }
+  },
+  false
+);
 
 container.style.opacity = "0";
 window.addEventListener("load", () =>
