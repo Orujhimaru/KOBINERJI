@@ -322,6 +322,11 @@ a {
   color: rgb(52, 52, 52);
 }
 
+.remove-gsap {
+  width: 85%;
+  height: 85vh;
+}
+
 .cookie-bar a {
   color: inherit;
 }

@@ -1,22 +1,22 @@
 // reload window on going back js
-function reloadPage() {
-  console.log("yey");
-  // The last "domLoading" Time //
-  var currentDocumentTimestamp = new Date(
-    performance.timing.domLoading
-  ).getTime();
-  // Current Time //
-  var now = Date.now();
-  // Ten Seconds //
-  var tenSec = 10 * 1000;
-  // Plus Ten Seconds //
-  var plusTenSec = currentDocumentTimestamp + tenSec;
-  if (now > plusTenSec) {
-    location.reload();
-  } else {
-  }
-}
-reloadPage();
+// function reloadPage() {
+//   console.log("yey");
+//   // The last "domLoading" Time //
+//   var currentDocumentTimestamp = new Date(
+//     performance.timing.domLoading
+//   ).getTime();
+//   // Current Time //
+//   var now = Date.now();
+//   // Ten Seconds //
+//   var tenSec = 10 * 1000;
+//   // Plus Ten Seconds //
+//   var plusTenSec = currentDocumentTimestamp + tenSec;
+//   if (now > plusTenSec) {
+//     location.reload();
+//   } else {
+//   }
+// }
+// reloadPage();
 var localStorage = window.localStorage;
 gsap.registerPlugin(ScrollTrigger);
 
@@ -24,6 +24,11 @@ const container = document.getElementById("container");
 const slider = document.getElementById("progress-slider");
 
 const loader = document.getElementById("preloader");
+
+container.classList.remove("hide-scrolling");
+slider.classList.remove("hide-item");
+container.classList.add("remove-gsap");
+
 container.style.opacity = "0";
 window.addEventListener("load", () =>
   setTimeout(function () {
@@ -199,6 +204,7 @@ for (let i = 0; i < arrOfPages.length; i++) {
 // change conatiner to page1 - to sections
 
 function loadNewPage(pageNumber) {
+  console.log("lol bigger");
   gsap.to(".container", {
     width: "100%",
     height: "600px",
