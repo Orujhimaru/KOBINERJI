@@ -3,6 +3,9 @@
 // PULL THEM UP IN THE NEW PAGE / OR THE CURRENT PAGE,
 // DELETE HIZMETLER.HTML, TURN IT INTO ABOUT US PAGE
 //
+response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate"); // HTTP 1.1.
+response.setHeader("Pragma", "no-cache"); // HTTP 1.0.
+response.setHeader("Expires", "0"); // Proxies.
 var localStorage = window.localStorage;
 gsap.registerPlugin(ScrollTrigger);
 
@@ -10,6 +13,7 @@ const container = document.getElementById("container");
 const slider = document.getElementById("progress-slider");
 
 container.classList.remove("hide-scrolling");
+console.log("removed");
 slider.classList.remove("hide-item");
 
 const loader = document.getElementById("preloader");
