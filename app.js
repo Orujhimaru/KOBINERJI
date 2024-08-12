@@ -19,10 +19,6 @@ reloadPage();
 var localStorage = window.localStorage;
 gsap.registerPlugin(ScrollTrigger);
 
-container.classList.remove("hide-scrolling");
-console.log("removed");
-slider.classList.remove("hide-item");
-
 const loader = document.getElementById("preloader");
 container.style.opacity = "0";
 window.addEventListener("load", () =>
