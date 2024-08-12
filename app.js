@@ -209,6 +209,7 @@ function loadNewPage(pageNumber) {
     width: "100%",
     height: "600px",
     duration: 1,
+    toggleActions: "play none restart reset",
     onComplete: () => {
       container.classList.add("hide-scrolling");
       slider.classList.add("hide-item");
