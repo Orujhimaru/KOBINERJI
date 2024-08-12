@@ -17,13 +17,6 @@
 //   }
 // }
 // reloadPage();
-var localStorage = window.localStorage;
-gsap.registerPlugin(ScrollTrigger);
-
-const container = document.getElementById("container");
-const slider = document.getElementById("progress-slider");
-
-const loader = document.getElementById("preloader");
 
 window.addEventListener(
   "pageshow",
@@ -36,6 +29,14 @@ window.addEventListener(
   },
   false
 );
+
+var localStorage = window.localStorage;
+gsap.registerPlugin(ScrollTrigger);
+
+const container = document.getElementById("container");
+const slider = document.getElementById("progress-slider");
+
+const loader = document.getElementById("preloader");
 
 container.style.opacity = "0";
 window.addEventListener("load", () =>
