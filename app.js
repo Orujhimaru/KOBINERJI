@@ -1,5 +1,6 @@
 // reload window on going back js
 function reloadPage() {
+  console.log("yey");
   // The last "domLoading" Time //
   var currentDocumentTimestamp = new Date(
     performance.timing.domLoading
