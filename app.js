@@ -1,9 +1,5 @@
-// TODO
-// SAVE THE ID, PHOTO AND THE TEXTS IN LOCALSTORAGE,
-// PULL THEM UP IN THE NEW PAGE / OR THE CURRENT PAGE,
-// DELETE HIZMETLER.HTML, TURN IT INTO ABOUT US PAGE
-//
-window.location.href = window.location.href;
+// reload window on going back js
+
 var localStorage = window.localStorage;
 gsap.registerPlugin(ScrollTrigger);
 
