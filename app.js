@@ -48,7 +48,7 @@ window.addEventListener("load", () =>
       ease: "power3.out",
       y: 5000,
     });
-  }, 1400)
+  }, 100)
 );
 
 function hideLoader() {
